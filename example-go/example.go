@@ -23,6 +23,7 @@ func main() {
 	fmt.Println(m["Seth"])
 	fmt.Println(m["Jeans"])
 
+	//The comma ok idiom
 	if v, ok := m["Jeans"]; ok {
 		fmt.Println("THIS IS THE IF PRINT FOR A VALUE THAT DOESN't EXIST, Value:", v)
 	} else if v, ok := m["Seth"]; ok {
