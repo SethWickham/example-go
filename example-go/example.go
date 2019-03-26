@@ -7,11 +7,12 @@ import (
 func main() {
 	//Go Pillars Efficient Execution, Efficient compilation, and ease of programming
 	// a SLICE allows you to group together VALUES of the same TYPE
-	// COMPOSITE LITERAL
+
+	// COMPOSITE LITERAL --  type{value}
 	cl := []int{7, 6, 5, 4, 3, 2, 1}
 	fmt.Println("COMPOSITE LITERAL PRINT:", cl)
-	// an example of a Multi Dimensional Slice
 
+	// an example of a Multi Dimensional Slice
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
 	fmt.Println("first string slice:", iceCream)
 	numberString := []string{"32", "64", "8"}
