@@ -8,7 +8,7 @@ func main() {
 	//Go Pillars Efficient Execution, Efficient compilation, and ease of programming
 	// a SLICE allows you to group together VALUES of the same TYPE
 
-	// COMPOSITE LITERAL --  type{value}
+	// COMPOSITE LITERAL --  []type{value}
 	cl := []int{7, 6, 5, 4, 3, 2, 1}
 	fmt.Println("COMPOSITE LITERAL PRINT:", cl)
 
