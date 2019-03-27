@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	//Go Pillars Efficient Execution, Efficient compilation, and ease of programming
+	//Go Pillars Efficient Compilation, Efficient Execution, and ease of programming
 	// a SLICE allows you to group together VALUES of the same TYPE
 
 	// COMPOSITE LITERAL --  []type{value}
