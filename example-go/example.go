@@ -10,7 +10,7 @@ func main() {
 
 	// COMPOSITE LITERAL --  []type{value}
 	cl := []int{7, 6, 5, 4, 3, 2, 1}
-	fmt.Println("COMPOSITE LITERAL PRINT:", cl)
+	fmt.Println("COMPOSITE LITERAL print:", cl)
 
 	// an example of a Multi Dimensional Slice
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
@@ -21,10 +21,10 @@ func main() {
 	fmt.Println("append Print:", iceCream)
 
 	numberString := []string{"32", "64", "8"}
-	fmt.Println("second string slice:", numberString)
+	fmt.Println("second STRING SLICE:", numberString)
 	// SLICE of a SLICE
-	xi := [][]string{iceCream, numberString}
-	fmt.Println("slice of a slice:", xi)
+	ss := [][]string{iceCream, numberString}
+	fmt.Println("SLICE of a SLICE:", ss)
 	// Mapping
 	m := map[string]int{
 		"Seth":    32,
@@ -43,12 +43,16 @@ func main() {
 		// Pulling in a method on a seperate file but in the same package looks like this:
 		other()
 
-		//My name in binary using conversion to convert a STRING into SLICE OF BYTE
+		//My name in binary and ascii using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
 		nx := []byte(x)
 		fmt.Println("My name normally:", x)
 
+		//my name in Binary
 		fmt.Printf("If a computer called out my name with no translator I would hear this:%b\n", nx)
+
+		//my name in ascii characters
+		fmt.Printf("my name in ascii characters: %#U", nx)
 
 	}
 }

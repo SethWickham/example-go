@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func other() {
-    fmt.Println("hello other file")
+	fmt.Println("I'm the other file print")
 }
