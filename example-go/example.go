@@ -15,6 +15,11 @@ func main() {
 	// an example of a Multi Dimensional Slice
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
 	fmt.Println("first string slice:", iceCream)
+
+	// using the built in append feature to add another VALUE to my SLICE
+	iceCream = append(iceCream, "Hazelnut")
+	fmt.Println("append Print:", iceCream)
+
 	numberString := []string{"32", "64", "8"}
 	fmt.Println("second string slice:", numberString)
 	// slice of slice xi
