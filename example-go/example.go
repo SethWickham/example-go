@@ -43,6 +43,10 @@ func main() {
 		//Deleting ShirtId
 		delete(m, "ShirtId")
 		fmt.Println("Print after delete:", m)
+		//checking to make sure ShirtId was deleted using the if ok idiom
+		if v, ok := m["ShirtId"]; ok {
+			fmt.Println("delete didn't work", v)
+		}
 
 		// Pulling in a method on a seperate file but in the same package looks like this:
 		other()
