@@ -40,6 +40,10 @@ func main() {
 	} else if v, ok := m["Seth"]; ok {
 		fmt.Println("THIS IS THE IF PRINT FOR A VALUE THAT EXISTS, Value:", v)
 
+		//Deleting ShirtId
+		delete(m, "ShirtId")
+		fmt.Println("Print after delete:", m)
+
 		// Pulling in a method on a seperate file but in the same package looks like this:
 		other()
 
