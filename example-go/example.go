@@ -22,7 +22,7 @@ func main() {
 
 	numberString := []string{"32", "64", "8"}
 	fmt.Println("second string slice:", numberString)
-	// slice of slice xi
+	// SLICE of a SLICE
 	xi := [][]string{iceCream, numberString}
 	fmt.Println("slice of a slice:", xi)
 	// Mapping
@@ -43,7 +43,7 @@ func main() {
 		// Pulling in a method on a seperate file but in the same package looks like this:
 		other()
 
-		//My name in binary using conversion to convert a string into slice of byte
+		//My name in binary using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
 		nx := []byte(x)
 		fmt.Println("My name normally:", x)
