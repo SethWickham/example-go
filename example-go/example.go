@@ -12,6 +12,11 @@ func main() {
 	cl := []int{7, 6, 5, 4, 3, 2, 1}
 	fmt.Println("COMPOSITE LITERAL print:", cl)
 
+	//Locating and Printing VALUES found  within a SLICE by finding their position on a zero based index
+	findx := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	fmt.Println("First Index find Print: ", findx[0:5])
+	fmt.Println("Second Index find Print: ", findx[0:5][7:9])
+
 	// an example of a Multi Dimensional Slice
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
 	fmt.Println("first string slice:", iceCream)
