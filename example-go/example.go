@@ -14,8 +14,9 @@ func main() {
 
 	//Locating and Printing VALUES found  within a SLICE by finding their position on a zero based index
 	findx := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
-	fmt.Println("First Index find Print: ", findx[0:5])
-	fmt.Println("Second Index find Print: ", findx[0:5][7:9])
+	fmt.Println("First Index find Print: ", findx[:5])
+	fmt.Println("Second Index find Print: ", findx[:5][7:9])
+	fmt.Println("Third Index find Print: ", findx[4:])
 
 	// an example of a Multi Dimensional Slice
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
