@@ -18,7 +18,8 @@ func main() {
 	fmt.Println("Second Index find Print: ", findx[:5][7:9])
 	fmt.Println("Third Index find Print: ", findx[4:])
 
-	// an example of a Multi Dimensional Slice
+	// an example of a Multi-Dimensional SLICE
+	// iceCream SLICE
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
 	fmt.Println("first string slice:", iceCream)
 
@@ -28,7 +29,7 @@ func main() {
 
 	numberString := []string{"32", "64", "8"}
 	fmt.Println("second STRING SLICE:", numberString)
-	// SLICE of a SLICE
+	// SLICE of a SLICE... using [][] shows us that we are merging together multiple SLICES, string tells us what type they are of and then we are passing in the values  which are located inside curly brackets (our two slices of string named: iceCream and numberString)
 	ss := [][]string{iceCream, numberString}
 	fmt.Println("SLICE of a SLICE:", ss)
 	// Mapping
