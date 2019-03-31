@@ -22,7 +22,7 @@ func main() {
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
 	fmt.Println("first string slice:", iceCream)
 
-	// using the built in append feature to add another VALUE to my SLICE
+	// using the built in APPEND feature to add another VALUE to my SLICE
 	iceCream = append(iceCream, "Hazelnut")
 	fmt.Println("append Print:", iceCream)
 
