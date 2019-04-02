@@ -29,9 +29,15 @@ func main() {
 
 	numberString := []string{"32", "64", "8"}
 	fmt.Println("second STRING SLICE:", numberString)
-	// SLICE of a SLICE... using [][] shows us that we are merging together multiple SLICES, string tells us what type they are of and then we are passing in the values  which are located inside curly brackets (our two slices of string named: iceCream and numberString)
-	ss := [][]string{iceCream, numberString}
-	fmt.Println("SLICE of a SLICE:", ss)
+
+	//using the ... feature in Go to dump in all the VALUES of our SLICE
+	iceCream = append(iceCream, numberString...)
+	fmt.Println("The iceCream and numberString Print:", iceCream)
+	// SLICE of a SLICE using [][] shows us that we are merging together multiple SLICES, string tells us what type they are of and then we are passing in the values  which are located inside curly brackets (our two slices of string named: iceCream and numberString)
+	veggieString := []string{"Carrots", "Broccoli", "Celery"}
+	allStrings := [][]string{veggieString, iceCream}
+	fmt.Println("SLICE of a SLICE:", allStrings)
+
 	// Mapping
 	m := map[string]int{
 		"Seth":    32,
@@ -39,6 +45,7 @@ func main() {
 	}
 	fmt.Println(m)
 	fmt.Println(m["Seth"])
+	//This will not print an error even though there is no "Jeans" Property so therefore we can check it with the if statement below
 	fmt.Println(m["Jeans"])
 
 	//The comma ok idiom
