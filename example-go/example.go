@@ -13,10 +13,15 @@ func main() {
 	fmt.Println("COMPOSITE LITERAL print:", cl)
 
 	//Locating and Printing VALUES found  within a SLICE by finding their position on a zero based index
+	//we can also use this for DELETING VALUES from our SLICE of INT
 	findx := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
 	fmt.Println("First Index find Print: ", findx[:5])
 	fmt.Println("Second Index find Print: ", findx[:5][7:9])
 	fmt.Println("Third Index find Print: ", findx[4:])
+	// using the index to range through two arguments
+	//we are taking the 0-3 index and the 6-end index spots and removing 45, 46, 47
+	findx = append(findx[:3], findx[6:]...)
+	fmt.Println("DELETE Print for findx: ", findx)
 
 	// a SLICE allows you to group together VALUES of the same TYPE
 	// an example of a Multi-Dimensional SLICE

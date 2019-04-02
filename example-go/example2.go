@@ -14,7 +14,6 @@ func other() {
 		fmt.Println(zToTen)
 		zToTen++
 	}
-
 	fmt.Println(zToTen)
 
 	//case statements
