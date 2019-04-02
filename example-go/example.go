@@ -6,7 +6,7 @@ import (
 
 func main() {
 	//Go Pillars Efficient Compilation, Efficient Execution, and ease of programming
-	// a SLICE allows you to group together VALUES of the same TYPE
+	//Go automatically adds the semi colons if we want to write multiple expressions on the same line then just add our own semicolon
 
 	// COMPOSITE LITERAL --  []type{value}
 	cl := []int{7, 6, 5, 4, 3, 2, 1}
@@ -18,6 +18,7 @@ func main() {
 	fmt.Println("Second Index find Print: ", findx[:5][7:9])
 	fmt.Println("Third Index find Print: ", findx[4:])
 
+	// a SLICE allows you to group together VALUES of the same TYPE
 	// an example of a Multi-Dimensional SLICE
 	// iceCream SLICE
 	iceCream := []string{"Chocolate", "Vanilla", "Strawberry"}
