@@ -33,5 +33,25 @@ func other() {
 	if false {
 		fmt.Println("nope do not Print")
 	}
+	{
+		//creating a map with a key of TYPE STRING then printing out all the values with their index postion
+
+		m := map[string][]string{
+
+			"Wickham_Seth":     []string{"boogie bording", "walking on the beach"},
+			"Wickham_Breanna":  []string{"wake bording", "makeup", "walking with Seth"},
+			"Wickhams_NYA@XYA": []string{"playing with ponies", "Loving", "being LOVED"},
+		}
+
+		m["Wickham_ian"] = []string{"electric boogaloo"}
+
+		for k, v := range m {
+			fmt.Println("This is the record for:", k)
+			for i, v2 := range v {
+				fmt.Println("\t", i, v2)
+			}
+		}
+
+	}
 
 }
