@@ -41,6 +41,7 @@ func main() {
 	fmt.Println("The iceCream and numberString Print:", iceCream)
 	// SLICE of a SLICE using [][] shows us that we are merging together multiple SLICES, string tells us what type they are of and then we are passing in the values  which are located inside curly brackets (our two slices of string named: iceCream and numberString)
 	veggieString := []string{"Carrots", "Broccoli", "Celery"}
+	//This is the TYPE SLICE of a SLICE of STRING
 	allStrings := [][]string{veggieString, iceCream}
 	fmt.Println("SLICE of a SLICE:", allStrings)
 
