@@ -34,7 +34,7 @@ func other() {
 		fmt.Println("nope do not Print")
 	}
 	{
-		//creating a map with a key of TYPE STRING then printing out all the values with their index postion
+		//creating a MAP with a key of TYPE STRING, adding in another record, deleting a record, then printing out all the remaining VALUES with their INDEX postion
 
 		m := map[string][]string{
 
@@ -44,6 +44,9 @@ func other() {
 		}
 
 		m["Wickham_ian"] = []string{"electric boogaloo"}
+		fmt.Println(m)
+
+		delete(m, "Wickham_ian")
 
 		for k, v := range m {
 			fmt.Println("This is the record for:", k)
@@ -53,5 +56,4 @@ func other() {
 		}
 
 	}
-
 }
