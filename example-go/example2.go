@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-func other() {
-	fmt.Println("I'm the other file print")
+// this file contains some other examples of go case statements and mapping
+func example2() {
+	fmt.Println("I'm the example2 file print")
 
 	//for loop: First we declare our variable and initialize
 	//our loop then we have the condition that will repeat

@@ -70,10 +70,10 @@ func main() {
 		}
 
 		// Passing in a method on a seperate file but in the same package looks like this:
-		other()
+		example2()
 
-		// Passing in our functions file
-		functions()
+		// Passing in our example 3 file containing func demonstrations
+		example3()
 
 		//My name in binary and ascii using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
