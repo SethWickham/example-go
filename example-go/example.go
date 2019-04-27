@@ -69,8 +69,11 @@ func main() {
 			fmt.Println("delete didn't work", v)
 		}
 
-		// Pulling in a method on a seperate file but in the same package looks like this:
+		// Passing in a method on a seperate file but in the same package looks like this:
 		other()
+
+		// Passing in our functions file
+		functions()
 
 		//My name in binary and ascii using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
