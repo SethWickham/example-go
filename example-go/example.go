@@ -75,6 +75,8 @@ func main() {
 		// Passing in our example 3 file containing func demonstrations
 		example3()
 
+		example4()
+
 		//My name in binary and ascii using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
 		nx := []byte(x)
