@@ -17,7 +17,7 @@ type disney struct {
 	goofyMovie bool
 }
 
-func example4() {
+func embedding() {
 
 	dM := disney{
 		hollywood: hollywood{
