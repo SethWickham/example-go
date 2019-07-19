@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 // this file contains some other examples of go case statements and mapping
-func example2() {
-	fmt.Println("I'm the example2 file print")
+func caseStatements() {
+	fmt.Println("Case Statements Print START:")
 
 	//for loop: First we declare our variable and initialize
 	//our loop then we have the condition that will repeat
@@ -57,4 +57,6 @@ func example2() {
 		}
 
 	}
+
+	fmt.Println("Case Statements Print END:")
 }

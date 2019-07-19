@@ -28,6 +28,6 @@ func example4() {
 	//we use dot notation to call in our FIELD VALUES, however in go our inner FIELD of nameOfProducer in our embedded TYPE hollywood
 	//was promoted (meaning that all of our FIELDS are equally easy to access without excessive navigation using dot notation)
 	//therefore we don't need to specify the hollywood STRUCT when trying to access the FIELD VALUE (nameOfProducer).
-	fmt.Println("Name of Producer:", dM.nameOfProducer)
+	fmt.Println("Name of Goofy Movie Producer:", dM.nameOfProducer)
 	fmt.Println("was The Goofy Movie made by Disney:", dM.goofyMovie)
 }

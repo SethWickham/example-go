@@ -69,14 +69,6 @@ func main() {
 			fmt.Println("delete didn't work", v)
 		}
 
-		// Passing in a method on a seperate file but in the same package looks like this:
-		example2()
-
-		// Passing in our example 3 file containing func demonstrations
-		example3()
-
-		example4()
-
 		//My name in binary and ascii using conversion to convert a STRING into SLICE OF BYTE
 		x := "Seth Wickham"
 		nx := []byte(x)
@@ -89,4 +81,9 @@ func main() {
 		fmt.Printf("my name in ascii characters: %#U", nx)
 
 	}
+	// calling our methods within the same package but seperate file:
+	caseStatements()
+	exampleFunc()
+	example4()
+
 }
