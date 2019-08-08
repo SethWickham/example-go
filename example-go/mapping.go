@@ -16,10 +16,10 @@ func mapping() {
 			"Wickham_Breanna":  []string{"wake bording", "makeup", "walking with Seth"},
 			"Wickhams_NYA@XYA": []string{"playing with ponies", "Loving", "being LOVED"},
 		}
-
+		// this is the other record we are adding in
 		m["Cousin_Ian"] = []string{"Surfing"}
 		fmt.Println(m)
-
+		// deleting our record
 		delete(m, "Wickham_Seth")
 
 		for k, v := range m {
