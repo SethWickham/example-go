@@ -82,8 +82,9 @@ func main() {
 
 	}
 	// calling our methods within the same package but seperate file:
-	caseStatements()
+	loops()
 	exampleFunc()
 	embedding()
+	mapping()
 
 }

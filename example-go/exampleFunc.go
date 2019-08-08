@@ -5,7 +5,7 @@ import "fmt"
 //this file contains demonstrations of functions in go
 
 func exampleFunc() {
-	//this is a what a functions looks like in go
+	//this is a what  functions looks like in go
 	// func (r reciever) identifier(parameters)(return(s)) { code }
 	demoInt(1, 2, 3, 4, 5)
 	demoStr("Johnny Appleseed")

@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-// this file contains some other examples of go case statements and mapping
-func caseStatements() {
+// this file contains some other examples of go looping statements and mapping
+func loops() {
 	fmt.Println("Case Statements Print START:")
 
 	//for loop: First we declare our variable and initialize
@@ -17,7 +17,6 @@ func caseStatements() {
 	}
 	fmt.Println(zToTen)
 
-	//case statements
 	// if both statements are true it will run Println
 	if 2 != 3 && 2 != 4 {
 		fmt.Println("two is not equal to three AND 2 is not equal to 4")
@@ -30,32 +29,9 @@ func caseStatements() {
 	if true {
 		fmt.Println("Print me I'm true")
 	}
-	//this statement will not Print becuase its evaluated as false
+	//this statement will not Print because its evaluated as false
 	if false {
 		fmt.Println("nope do not Print")
-	}
-	{
-		//creating a MAP with a key of TYPE STRING, adding in another record, deleting a record, then printing out all the remaining VALUES with their INDEX postion
-
-		m := map[string][]string{
-
-			"Wickham_Seth":     []string{"boogie bording", "walking on the beach"},
-			"Wickham_Breanna":  []string{"wake bording", "makeup", "walking with Seth"},
-			"Wickhams_NYA@XYA": []string{"playing with ponies", "Loving", "being LOVED"},
-		}
-
-		m["Wickham_ian"] = []string{"electric boogaloo"}
-		fmt.Println(m)
-
-		delete(m, "Wickham_ian")
-
-		for k, v := range m {
-			fmt.Println("This is the record for:", k)
-			for i, v2 := range v {
-				fmt.Println("\t", i, v2)
-			}
-		}
-
 	}
 
 	fmt.Println("Case Statements Print END:")
